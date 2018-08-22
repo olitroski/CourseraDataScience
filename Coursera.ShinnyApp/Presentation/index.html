@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI &amp; Daily Calories Requirement</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI &amp; Daily Calories Requirement">
+  <meta name="author" content="Oliver Rojas">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI &amp; Daily Calories Requirement</h1>
+    <h2>A simple calculator</h2>
+    <p>Oliver Rojas<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>BMI &amp; Daily Calories Requirement</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This product is a simple calculator who compute your Body Mass Index (BMI) and your Daily Calories Requirement based in Harris-Benedict equation develop in 1918. In this case we use the revision made by Mifflin &amp; St. Jeor (1990) who ajust the over stimation made by the original equation.</p>
+
+<p>You can find more information in the next links:</p>
+
+<ul>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/2305711">http://www.ncbi.nlm.nih.gov/pubmed/2305711</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Harris-Benedict_equation">https://en.wikipedia.org/wiki/Harris-Benedict_equation</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="1" style="background:;">
+  <hgroup>
+    <h2>Input data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The calculator use the next input data:</p>
+
+<ul>
+<li>Age (in Years)</li>
+<li>Weight (in Kilograms)</li>
+<li>Height (in Centimeters)</li>
+<li>Gender</li>
+<li>Physical activity</li>
+</ul>
+
+<p>Whit this data we also will calculate your BMI and tell you about what category you have according the World Health Organization.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="1" style="background:;">
+  <hgroup>
+    <h2>Boddy Mass Index</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Body Mass Index (BMI) is a value derived from weight &amp; height. It&#39;s an attempt to quantify the amount of tissue mass and categorize into four categories: Underweight, Normal Weight, Over Weight and Obese. Nevertheless the simplicity of the formula it&#39;s a very good predictor of your nutritional status.</p>
+
+<p>The calculations and categories are:</p>
+
+<p>\[ BMI=\frac { Weight(kg) }{ Height({ m }^{ 2 }) } \]</p>
+
+<ol>
+<li>Underweight (&lt; 18.5)</li>
+<li>Normal weight (18.5 - 24.9)</li>
+<li>Over weight (25 - 29.9)</li>
+<li>Obese (&gt; 30)</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="1" style="background:;">
+  <hgroup>
+    <h2>Harris-Benedict equation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>With your BMI already calculated we also use the Harris-Benedict equation to compute your calories requirement. This algorithm mix your age, gender and physical activity in order to get a very close look in your energy daily requirements. First we need to calculate your Basal Metabolic Rate (BMR).</p>
+
+<p>\[ maleBMR=(10\cdot weight)+(6.25\cdot height)-(5\cdot age)+5 \]
+ \[ femaleBMR=(10\cdot weight)+(6.25\cdot height)-(5\cdot age)-161 \]</p>
+
+<p>And then multiply your BMR with a factor derived of your phisical activity.</p>
+
+<ul>
+<li>Little to None excercise:              \(Calories=BMR\times 1.2\)</li>
+<li>Ligth excercise, 1-3 days per week:    \(Calories=BMR\times 1.375\)</li>
+<li>Moderate excercise, 3-5 days per week: \(Calories=BMR\times 1.55\)</li>
+<li>Heavy exercise, 6-7 days per week:     \(Calories=BMR\times 1.725\)</li>
+<li>Very heavy exercise (extra heavy workouts): \(Calories=BMR\times 1.9\)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='BMI &amp; Daily Calories Requirement'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Input data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Boddy Mass Index'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Harris-Benedict equation'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
